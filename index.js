@@ -7,6 +7,7 @@ app.get('/', function (req, res) {
 
 // Pulls in static files from Public folder
 app.use(express.static(__dirname + '/Public'));
+app.use(express.static(__dirname + 'node_modules/frosted-glass'));
 
 const port = 3000;
 var attempts = 5;

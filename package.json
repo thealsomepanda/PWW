@@ -20,5 +20,6 @@
     "express": "^4.16.3",
     "tether": "^1.4.3",
     "tooltip.js": "^1.2.0"
-  }
+  },
+  "devDependencies": {}
 }
