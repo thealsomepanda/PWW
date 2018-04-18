@@ -1,7 +1,8 @@
-const userEmail = document.getElementsByName('emailSignup');
-const emailButton = document.getElementsByName('emailButton');
+let userEmail = document.getElementById('emailSignup');
+let emailButton = document.getElementById('emailButton');
+let userEmailAssignment;
 
 emailButton.addEventListener('click', () => {
-    userEmail.value = userEmail.value;
-    //alert(userEmail);
+    userEmailAssignment = userEmail.value;
 });
+
