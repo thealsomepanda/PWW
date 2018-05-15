@@ -18,6 +18,7 @@
   "homepage": "https://github.com/thealsomepanda/PWW#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "mongodb": "^3.0.7",
     "tether": "^1.4.3",
     "tooltip.js": "^1.2.0"
   },

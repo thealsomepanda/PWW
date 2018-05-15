@@ -1,6 +1,10 @@
+
+
 let userEmail = document.getElementById('emailSignup');
 let emailButton = document.getElementById('emailButton');
 let userEmailAssignment;
+
+$('#slidedown').hide().slideDown(1000);
 
 emailButton.addEventListener('click', () => {
     userEmailAssignment = userEmail.value;
@@ -9,6 +13,10 @@ emailButton.addEventListener('click', () => {
 
     let validEmail = re.test(userEmailAssignment);
     console.log(validEmail);
+
+    if (validEmail === false) {
+        $('#emailSignup').css('backgroundColor', 'red');
+    }
 
 });
 

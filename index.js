@@ -16,9 +16,9 @@ while(attempts > 0) {
     try {
         app.listen(port);
         break;
-    }   catch (expception) {
+    }   catch (exception) {
         attempts--;
-        constole.log('Port assignment failed');
+        console.log('Port assignment failed');
         if(attempts === 0) {
             process.exit(222);
         }
