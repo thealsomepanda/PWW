@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/Public/views/index.html');
 });
@@ -26,3 +29,9 @@ while(attempts > 0) {
 }
 
 console.log('App listening port %i...', port);
+
+let urleoncodedParser = (bodyParser.urlencoded({ extended: false }));
+
+app.post('/email', urleoncodedParser, function(req, res) {
+    console.log(req.body);
+});
